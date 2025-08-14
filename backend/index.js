@@ -47,7 +47,7 @@ const connectWithRetry = () => {
         .then(() => {
             console.log('MongoDB connected');
             app.listen(PORT, () => {
-                console.log('Backend running on port ${PORT}');
+                console.log(`Backend running on port ${PORT}`);
             });
         })
         .catch(err => {
