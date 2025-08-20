@@ -33,7 +33,7 @@ app.put('/tasks/:id', async (req, res) => {
 });
 
 app.delete('/tasks/:id', async (req, res) => {
-    await Task.findByIdAndUpdate(req.params.id);
+    await Task.findByIdAndDelete(req.params.id);
     res.sendStatus(204);
 });
 
